@@ -1,0 +1,16 @@
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\bin\Debug\beadando.exe.config
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\bin\Debug\beadando.xml
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\bin\Debug\beadando.exe
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\bin\Debug\beadando.pdb
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.csprojAssemblyReference.cache
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\MainWindow.g.cs
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\App.g.cs
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando_MarkupCompile.cache
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando_MarkupCompile.lref
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\MainWindow.baml
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.g.resources
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.Properties.Resources.resources
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.csproj.GenerateResource.cache
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.csproj.CoreCompileInputs.cache
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.exe
+C:\Users\Gamer\Documents\ÓE\4.felev\haladó_szoftver\gyak\wpf_beadando\beadando\obj\Debug\beadando.pdb
