@@ -43,25 +43,33 @@ namespace beadando
         /// <param name="e"></param>
         private void utal_1_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla1_input.Text);
-                bool eredmeny = szamla1.Utalas(osszeg, szamla2);
-                if (eredmeny)
+                try
                 {
-                    MessageBox.Show("Sikeres utalás!");
+                    int osszeg = Convert.ToInt32(Szamla1_input.Text);
+                    bool eredmeny = szamla1.Utalas(osszeg, szamla2);
+                    if (eredmeny)
+                    {
+                        MessageBox.Show("Sikeres utalás!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sikertelen utalás!");
+                    }
+                    szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
+                    szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
                 }
-                else
+                catch (InvalidCastException)
                 {
-                    MessageBox.Show("Sikertelen utalás!");
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
                 }
-                szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
-                szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
+            
         }
         /// <summary>
         /// Az Számla 1-re tölt fel összeget
@@ -70,17 +78,25 @@ namespace beadando
         /// <param name="e"></param>
         private void feltolt_1_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla1_input.Text);
-                szamla1.Felrak(osszeg);
-                szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
-                MessageBox.Show("Sikeres utalás!");
+                try
+                {
+                    int osszeg = Convert.ToInt32(Szamla1_input.Text);
+                    szamla1.Felrak(osszeg);
+                    szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
+                    MessageBox.Show("Sikeres utalás!");
+                }
+                catch (InvalidCastException)
+                {
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                }
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
+            
         }
         /// <summary>
         /// Kivesz egy összeget a Számla 1-ről
@@ -89,17 +105,25 @@ namespace beadando
         /// <param name="e"></param>
         private void kiv_1_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla1_input.Text);
-                szamla1.Levon(osszeg);
-                szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
-                MessageBox.Show("Sikeres utalás!");
+                try
+                {
+                    int osszeg = Convert.ToInt32(Szamla1_input.Text);
+                    szamla1.Levon(osszeg);
+                    szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
+                    MessageBox.Show("Sikeres utalás!");
+                }
+                catch (InvalidCastException)
+                {
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                }
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
+            
         }
         /// <summary>
         /// Megváltoztat ja a Számla 1 tulajdonos nevét
@@ -108,8 +132,14 @@ namespace beadando
         /// <param name="e"></param>
         private void valt_1_Click(object sender, RoutedEventArgs e)
         {
-            szamla1.Valtas(Szamla1_input.Text);
-            szamla1_tulaj.Text = szamla1.tulaj_nev;
+            if (Szamla1_input.Text != "")
+            {
+                szamla1.Valtas(Szamla1_input.Text);
+                szamla1_tulaj.Text = szamla1.tulaj_nev;
+            }
+            else {
+                MessageBox.Show("Kérem adjon meg valamit");
+            }
         }
 
         /// <summary>
@@ -119,17 +149,25 @@ namespace beadando
         /// <param name="e"></param>
         private void feltolt_2_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla2_input.Text);
-                szamla2.Felrak(osszeg);
-                szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
-                MessageBox.Show("Sikeres utalás!");
+                try
+                {
+                    int osszeg = Convert.ToInt32(Szamla2_input.Text);
+                    szamla2.Felrak(osszeg);
+                    szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
+                    MessageBox.Show("Sikeres utalás!");
+                }
+                catch (InvalidCastException)
+                {
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                }
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
+            
         }
         /// <summary>
         /// A számal 2-ről utal a Számla 1-re
@@ -138,24 +176,31 @@ namespace beadando
         /// <param name="e"></param>
         private void utal_2_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla2_input.Text);
-                bool eredmeny = szamla2.Utalas(osszeg, szamla1);
-                if (eredmeny)
+                try
                 {
-                    MessageBox.Show("Sikeres utalás!");
+                    int osszeg = Convert.ToInt32(Szamla2_input.Text);
+                    bool eredmeny = szamla2.Utalas(osszeg, szamla1);
+                    if (eredmeny)
+                    {
+                        MessageBox.Show("Sikeres utalás!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sikertelen utalás!");
+                    }
+                    szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
+                    szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
                 }
-                else
+                catch (InvalidCastException)
                 {
-                    MessageBox.Show("Sikertelen utalás!");
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
                 }
-                szamla1_egyenleg.Text = Convert.ToString(szamla1.egyenleg);
-                szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
         }
 
@@ -166,18 +211,24 @@ namespace beadando
         /// <param name="e"></param>
         private void kiv_2_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (Szamla1_input.Text != "")
             {
-                int osszeg = Convert.ToInt32(Szamla2_input.Text);
-                szamla2.Levon(osszeg);
-                szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
-                MessageBox.Show("Sikeres utalás!");
+                try
+                {
+                    int osszeg = Convert.ToInt32(Szamla2_input.Text);
+                    szamla2.Levon(osszeg);
+                    szamla2_egyenleg.Text = Convert.ToString(szamla2.egyenleg);
+                    MessageBox.Show("Sikeres utalás!");
+                }
+                catch (InvalidCastException)
+                {
+                    MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                }
             }
-            catch (InvalidCastException)
+            else
             {
-                MessageBox.Show("Nem megfelelő karaktereket tartalmaz az összeg!");
+                MessageBox.Show("Kérem adjon meg valamit");
             }
-
         }
         /// <summary>
         /// Megváltoztat ja a Számla 2 tulajdonos nevét
@@ -186,8 +237,15 @@ namespace beadando
         /// <param name="e"></param>
         private void valt_2_Click(object sender, RoutedEventArgs e)
         {
-            szamla2.Valtas(Szamla2_input.Text);
-            szamla2_tulaj.Text = szamla2.tulaj_nev;
+            if (Szamla1_input.Text != "")
+            {
+                szamla2.Valtas(Szamla2_input.Text);
+                szamla2_tulaj.Text = szamla2.tulaj_nev;
+            }
+            else
+            {
+                MessageBox.Show("Kérem adjon meg valamit");
+            }
         }
     }
 }
