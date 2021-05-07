@@ -9,6 +9,56 @@
             Számla adatait leíró osztály
             </summary>
         </member>
+        <member name="P:beadando.Szamla.ID">
+            <summary>
+            Példány azonosító.
+            </summary>
+        </member>
+        <member name="P:beadando.Szamla.tulaj_nev">
+            <summary>
+            Számla tulajdonos neve.
+            </summary>
+        </member>
+        <member name="P:beadando.Szamla.egyenleg">
+            <summary>
+            Számla egyenlege.
+            </summary>
+        </member>
+        <member name="M:beadando.Szamla.#ctor(System.Int32,System.String,System.Int32)">
+            <summary>
+            generál két paraméterből egy teljes nevet.
+            </summary>
+            <param name="id"> Számmla azonosító</param>
+            <param name="nev"> Számla tulajdonos neve</param>
+            <param name="egyenleg"> Számla egyenleg</param>
+        </member>
+        <member name="M:beadando.Szamla.Levon(System.Int32)">
+            <summary>
+            Levon egy összeget a számla egyenlegről , megnézi hogy van e elég pénz a számlán, ha nincs visszaad egy false értéket.
+            </summary>
+            <param name="szam">Levonni kívánt összeg</param>
+            <return>bool</return>
+        </member>
+        <member name="M:beadando.Szamla.Felrak(System.Int32)">
+            <summary>
+            Hozzáad egy összeget a számla egyenlegéhez.
+            </summary>
+            <param name="szam">Feltölteni kívánt összeg</param>
+        </member>
+        <member name="M:beadando.Szamla.Valtas(System.String)">
+            <summary>
+            Megváltoztatja a számla tulajdonos nevét.
+            </summary>
+            <param name="nev"> Az új név</param>
+        </member>
+        <member name="M:beadando.Szamla.Utalas(System.Int32,beadando.Szamla)">
+            <summary>
+            Összeg utalás egyik számláról a másikra, ha ninc elég pénz a számlán akkor visszadob egy false értéket.
+            </summary>
+            <param name="osszeg"> Átutalni kívánt összeg</param>
+            <param name="delikvens"> Cél számla</param>
+            <return>bool</return>
+        </member>
         <member name="T:beadando.App">
             <summary>
             Interaction logic for App.xaml
@@ -34,6 +84,68 @@
             <summary>
             MainWindow
             </summary>
+        </member>
+        <member name="F:beadando.MainWindow.szamla1">
+            <summary>
+            Számlákat tároló példányok
+            </summary>
+            Számla 1
+        </member>
+        <member name="M:beadando.MainWindow.utal_1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            A számal 1-ről utal a Számla 2-re
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.feltolt_1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Az Számla 1-re tölt fel összeget
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.kiv_1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Kivesz egy összeget a Számla 1-ről
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.valt_1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Megváltoztat ja a Számla 1 tulajdonos nevét
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.feltolt_2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Az Számla 2-re tölt fel összeget
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.utal_2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            A számal 2-ről utal a Számla 1-re
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.kiv_2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Kivesz egy összeget a Számla 2-ről
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:beadando.MainWindow.valt_2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Megváltoztat ja a Számla 2 tulajdonos nevét
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="M:beadando.MainWindow.InitializeComponent">
             <summary>

@@ -1,0 +1,812 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "UMLCollaboration",
+			"_id": "AAAAAAF5RnaJiuf+q8o=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Collaboration1",
+			"ownedElements": [
+				{
+					"_type": "UMLInteraction",
+					"_id": "AAAAAAF5RnaJiuf/3uQ=",
+					"_parent": {
+						"$ref": "AAAAAAF5RnaJiuf+q8o="
+					},
+					"name": "Interaction1",
+					"ownedElements": [
+						{
+							"_type": "UMLSequenceDiagram",
+							"_id": "AAAAAAF5RnaJiugA9vc=",
+							"_parent": {
+								"$ref": "AAAAAAF5RnaJiuf/3uQ="
+							},
+							"name": "SequenceDiagram1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAF5Rnb8qegTr68=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Flowchart1",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAF5Rnb8qegUXmg=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "FlowchartDiagram1",
+					"ownedViews": [
+						{
+							"_type": "FCConnectorView",
+							"_id": "AAAAAAF5Rnm4/egaQMg=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5Rnm4/egYn14="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5Rnm4/egbijM=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rnm4/egaQMg="
+									},
+									"font": "Arial;13;0",
+									"left": 352.25,
+									"top": 98.25,
+									"width": 32.5,
+									"height": 20.5,
+									"text": "kezdet",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 336,
+							"top": 88,
+							"width": 65,
+							"height": 41,
+							"nameLabel": {
+								"$ref": "AAAAAAF5Rnm4/egbijM="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAF5Rnpfdugk604=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RnpfdugiR2Y="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5RnpfduglOdg=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rnpfdugk604="
+									},
+									"font": "Arial;13;0",
+									"left": 322,
+									"top": 186,
+									"width": 93,
+									"height": 39,
+									"text": "Szamla objektumok példányosítása",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 312,
+							"top": 176,
+							"width": 113,
+							"height": 65,
+							"nameLabel": {
+								"$ref": "AAAAAAF5RnpfduglOdg="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5Rnr3hegy9tU=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5Rnr3hOgwN+w="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5Rnr3hegzugM=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rnr3hegy9tU="
+									},
+									"model": {
+										"$ref": "AAAAAAF5Rnr3hOgwN+w="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 383,
+									"top": 145,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5Rnr3hegy9tU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5Rnpfdugk604="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5Rnm4/egaQMg="
+							},
+							"lineStyle": 2,
+							"points": "369:128;369:176",
+							"nameLabel": {
+								"$ref": "AAAAAAF5Rnr3hegzugM="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAF5RoN2v+g9ntw=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RoN2vug7ISY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5RoN2v+g+o6I=",
+									"_parent": {
+										"$ref": "AAAAAAF5RoN2v+g9ntw="
+									},
+									"font": "Arial;13;0",
+									"left": 322,
+									"top": 282,
+									"width": 92,
+									"height": 39,
+									"text": "Felületi komponensek inicializálása",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 312,
+							"top": 272,
+							"width": 112,
+							"height": 72,
+							"nameLabel": {
+								"$ref": "AAAAAAF5RoN2v+g+o6I="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5RoQ2XehNa3Y=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RoQ2XOhLy9o="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5RoQ2XehO7ek=",
+									"_parent": {
+										"$ref": "AAAAAAF5RoQ2XehNa3Y="
+									},
+									"model": {
+										"$ref": "AAAAAAF5RoQ2XOhLy9o="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 382,
+									"top": 249,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5RoQ2XehNa3Y="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5RoN2v+g9ntw="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5Rnpfdugk604="
+							},
+							"lineStyle": 2,
+							"points": "368:240;368:272",
+							"nameLabel": {
+								"$ref": "AAAAAAF5RoQ2XehO7ek="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAF5RoSKvuhWZ88=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RoSKvuhUEEY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5RoSKvuhX4ko=",
+									"_parent": {
+										"$ref": "AAAAAAF5RoSKvuhWZ88="
+									},
+									"font": "Arial;13;0",
+									"left": 322,
+									"top": 378,
+									"width": 92,
+									"height": 65,
+									"text": "Számla információk beállítása a disabled Textboxokba",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 312,
+							"top": 368,
+							"width": 112,
+							"height": 85,
+							"nameLabel": {
+								"$ref": "AAAAAAF5RoSKvuhX4ko="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5RoZUv+hhBxU=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RoZUvuhfdEc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5RoZUv+hiyuI=",
+									"_parent": {
+										"$ref": "AAAAAAF5RoZUv+hhBxU="
+									},
+									"model": {
+										"$ref": "AAAAAAF5RoZUvuhfdEc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 381,
+									"top": 348,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5RoZUv+hhBxU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5RoSKvuhWZ88="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5RoN2v+g9ntw="
+							},
+							"lineStyle": 2,
+							"points": "367:343;367:368",
+							"nameLabel": {
+								"$ref": "AAAAAAF5RoZUv+hiyuI="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAF5Rs8cWuhqJtY=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5Rs8cWuhrG0I=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rs8cWuhqJtY="
+									},
+									"font": "Arial;13;0",
+									"left": 340.542236328125,
+									"top": 517,
+									"width": 57.08447265625,
+									"height": 26,
+									"text": "Gomb nyomás",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 312,
+							"top": 504,
+							"width": 114.1689453125,
+							"height": 52,
+							"nameLabel": {
+								"$ref": "AAAAAAF5Rs8cWuhrG0I="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5Rs9aAeh0KWA=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5Rs9aAOhyqw8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5Rs9aAeh14iA=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rs9aAeh0KWA="
+									},
+									"model": {
+										"$ref": "AAAAAAF5Rs9aAOhyqw8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 381,
+									"top": 471,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5Rs9aAeh0KWA="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5Rs8cWuhqJtY="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5RoSKvuhWZ88="
+							},
+							"lineStyle": 2,
+							"points": "367:452;367:504",
+							"nameLabel": {
+								"$ref": "AAAAAAF5Rs9aAeh14iA="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAF5Rs+hzuh9ImQ=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5Rs+hzuh7VN4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5Rs+hzuh+Icw=",
+									"_parent": {
+										"$ref": "AAAAAAF5Rs+hzuh9ImQ="
+									},
+									"font": "Arial;13;0",
+									"left": 330,
+									"top": 594,
+									"width": 76,
+									"height": 65,
+									"text": "Click event-hez tartozó handler futtatása ",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 320,
+							"top": 584,
+							"width": 96,
+							"height": 112,
+							"nameLabel": {
+								"$ref": "AAAAAAF5Rs+hzuh+Icw="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5RtCPxuiXjOU=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RtCPxuiV7BU="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5RtCPx+iYPHo=",
+									"_parent": {
+										"$ref": "AAAAAAF5RtCPxuiXjOU="
+									},
+									"model": {
+										"$ref": "AAAAAAF5RtCPxuiV7BU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 382,
+									"top": 562,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5RtCPxuiXjOU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5Rs+hzuh9ImQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5Rs8cWuhqJtY="
+							},
+							"lineStyle": 2,
+							"points": "368:555;368:584",
+							"nameLabel": {
+								"$ref": "AAAAAAF5RtCPx+iYPHo="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAF5RtDznuihexo=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RtDznuifm18="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAF5RtDznuiiPmE=",
+									"_parent": {
+										"$ref": "AAAAAAF5RtDznuihexo="
+									},
+									"font": "Arial;13;0",
+									"left": 338,
+									"top": 738,
+									"width": 76,
+									"height": 39,
+									"text": "disabled Textboxok frissítése",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 328,
+							"top": 728,
+							"width": 96,
+							"height": 104,
+							"nameLabel": {
+								"$ref": "AAAAAAF5RtDznuiiPmE="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5RtEzceiq6d8=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RtEzcOioJsI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5RtEzceirIt4=",
+									"_parent": {
+										"$ref": "AAAAAAF5RtEzceiq6d8="
+									},
+									"model": {
+										"$ref": "AAAAAAF5RtEzcOioJsI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 382,
+									"top": 704,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5RtEzceiq6d8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5RtDznuihexo="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5Rs+hzuh9ImQ="
+							},
+							"lineStyle": 2,
+							"points": "368:695;368:728",
+							"nameLabel": {
+								"$ref": "AAAAAAF5RtEzceirIt4="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAF5RtFKIeiz4fI=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"model": {
+								"$ref": "AAAAAAF5RtFKIeixRcs="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAF5RtFKIei0QJY=",
+									"_parent": {
+										"$ref": "AAAAAAF5RtFKIeiz4fI="
+									},
+									"model": {
+										"$ref": "AAAAAAF5RtFKIeixRcs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 631,
+									"top": 649,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAF5RtFKIeiz4fI="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAF5RtDznuihexo="
+							},
+							"tail": {
+								"$ref": "AAAAAAF5Rs8cWuhqJtY="
+							},
+							"lineStyle": 2,
+							"points": "425:528;616:528;616:784;423:784",
+							"nameLabel": {
+								"$ref": "AAAAAAF5RtFKIei0QJY="
+							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAF5RtIkd+jFrH8=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"font": "Arial;13;0",
+							"left": 376,
+							"top": 552,
+							"width": 60,
+							"height": 25,
+							"text": "Igen"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAF5RtJQIujLA24=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnb8qegUXmg="
+							},
+							"font": "Arial;13;0",
+							"left": 432,
+							"top": 504,
+							"width": 60,
+							"height": 25,
+							"text": "Nem"
+						}
+					]
+				},
+				{
+					"_type": "FCConnector",
+					"_id": "AAAAAAF5Rnm4/egYn14=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "kezdet",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5Rnr3hOgwN+w=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rnm4/egYn14="
+							},
+							"source": {
+								"$ref": "AAAAAAF5Rnm4/egYn14="
+							},
+							"target": {
+								"$ref": "AAAAAAF5RnpfdugiR2Y="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAF5RnpfdugiR2Y=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "Szamla objektumok példányosítása",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5RoQ2XOhLy9o=",
+							"_parent": {
+								"$ref": "AAAAAAF5RnpfdugiR2Y="
+							},
+							"source": {
+								"$ref": "AAAAAAF5RnpfdugiR2Y="
+							},
+							"target": {
+								"$ref": "AAAAAAF5RoN2vug7ISY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAF5RoN2vug7ISY=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "Felületi komponensek inicializálása",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5RoZUvuhfdEc=",
+							"_parent": {
+								"$ref": "AAAAAAF5RoN2vug7ISY="
+							},
+							"source": {
+								"$ref": "AAAAAAF5RoN2vug7ISY="
+							},
+							"target": {
+								"$ref": "AAAAAAF5RoSKvuhUEEY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAF5RoSKvuhUEEY=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "Számla információk beállítása a disabled Textboxokba",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5Rs9aAOhyqw8=",
+							"_parent": {
+								"$ref": "AAAAAAF5RoSKvuhUEEY="
+							},
+							"source": {
+								"$ref": "AAAAAAF5RoSKvuhUEEY="
+							},
+							"target": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAF5Rs8cWehobD8=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "Gomb nyomás",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5RtCPxuiV7BU=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							},
+							"source": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							},
+							"target": {
+								"$ref": "AAAAAAF5Rs+hzuh7VN4="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5RtFKIeixRcs=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							},
+							"source": {
+								"$ref": "AAAAAAF5Rs8cWehobD8="
+							},
+							"target": {
+								"$ref": "AAAAAAF5RtDznuifm18="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAF5Rs+hzuh7VN4=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "Click event-hez tartozó handler futtatása ",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAF5RtEzcOioJsI=",
+							"_parent": {
+								"$ref": "AAAAAAF5Rs+hzuh7VN4="
+							},
+							"source": {
+								"$ref": "AAAAAAF5Rs+hzuh7VN4="
+							},
+							"target": {
+								"$ref": "AAAAAAF5RtDznuifm18="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAF5RtDznuifm18=",
+					"_parent": {
+						"$ref": "AAAAAAF5Rnb8qegTr68="
+					},
+					"name": "disabled Textboxok frissítése"
+				}
+			]
+		}
+	]
+}
